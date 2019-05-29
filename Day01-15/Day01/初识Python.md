@@ -281,10 +281,8 @@ Namespaces are one honking great idea -- let's do more of those!
     #pensize方法，规定了画笔的粗细
     #pencolor方法，定义了画笔的颜色
     #forward方法，规定了画笔应该向前走，默认从向有开始？
-    
     #tight方法，定义了画笔应该向有拐
     #left方法，定义了画笔向左拐
-    
     turtle.pensize(4)
     turtle.pencolor('red')
     turtle.forward(100)
