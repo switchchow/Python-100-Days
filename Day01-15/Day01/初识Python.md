@@ -234,31 +234,56 @@ PyCharm的安装、配置和使用我们在后面会进行介绍。
     ```Python
     import this
     
-    Beautiful is better than ugly.
-    Explicit is better than implicit.
-    Simple is better than complex.
-    Complex is better than complicated.
-    Flat is better than nested.
-    Sparse is better than dense.
-    Readability counts.
-    Special cases aren't special enough to break the rules.
-    Although practicality beats purity.
-    Errors should never pass silently.
-    Unless explicitly silenced.
-    In the face of ambiguity, refuse the temptation to guess.
-    There should be one-- and preferably only one --obvious way to do it.
-    Although that way may not be obvious at first unless you're Dutch.
-    Now is better than never.
-    Although never is often better than *right* now.
-    If the implementation is hard to explain, it's a bad idea.
-    If the implementation is easy to explain, it may be a good idea.
-    Namespaces are one honking great idea -- let's do more of those!
-    ```
+ Beautiful is better than ugly.
+漂亮胜于丑陋
+Explicit is better than implicit.
+明晰的代码胜于混乱含蓄的
+Simple is better than complex.
+简单的胜于复杂的
+Complex is better than complicated.
+复杂的胜于错综复杂的
+Flat is better than nested.
+非嵌套直接的胜于嵌套的
+Sparse is better than dense.
+稀疏的胜于稠密的（代码能少写就少写）
+Readability counts.
+强可读性
+Special cases aren't special enough to break the rules.
+特别的类并不能打破规则
+Although practicality beats purity.
+通过实例化来击败纯粹的类？
+Errors should never pass silently.
+错误不该被静静的通过（有错就抛出来）
+Unless explicitly silenced.
+所有东西都要明确声明
+In the face of ambiguity, refuse the temptation to guess.
+直面含糊不清的地方，避免陷入争吵
+There should be one-- and preferably only one --obvious way to do it.
+最好用一种最合适的方法去做同一件事
+Although that way may not be obvious at first unless you're Dutch.
+一个好的方法可能不会在第一次出现，除非你是荷兰人？（不懂西方文化--）
+Now is better than never.
+聊胜于无
+Although never is often better than *right* now.
+没有比*更好
+If the implementation is hard to explain, it's a bad idea.
+如果某种实现很难解释，那么它就是坏主意
+If the implementation is easy to explain, it may be a good idea.
+如果某个方法很容易解释，那么它是个好注意
+Namespaces are one honking great idea -- let's do more of those!
+命名空间是个很好的注意，让我们开始。
 
 2. 学习使用turtle在屏幕上绘制图形。
 
     ```Python
     import turtle
+    #turtle 模块，可以用来画图
+    #pensize方法，规定了画笔的粗细
+    #pencolor方法，定义了画笔的颜色
+    #forward方法，规定了画笔应该向前走，默认从向有开始？
+    
+    #tight方法，定义了画笔应该向有拐
+    #left方法，定义了画笔向左拐
     
     turtle.pensize(4)
     turtle.pencolor('red')
@@ -267,7 +292,10 @@ PyCharm的安装、配置和使用我们在后面会进行介绍。
     turtle.forward(100)
     turtle.right(90)
     turtle.forward(100)
-    turtle.right(90)
+    turtle.left(90)
     turtle.forward(100)
+    turtle.right(90)
+    turtle.back(100)
+    turtle.right(90)
     turtle.mainloop()
     ```
